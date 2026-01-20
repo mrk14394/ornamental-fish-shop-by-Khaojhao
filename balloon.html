@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ปลาบอลลูน (Balloon Molly) | ร้าน ป.ปลาตัวกลม</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --blue: #38bdf8;
+      --blue-dark: #0284c7;
+      --orange: #fb923c;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #e0f2fe, #fff7ed);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--blue-dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.8rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--orange);
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff7ed;
+      color: var(--orange);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ปลาบอลลูน</h1>
+  <p><em>Poecilia latipinna</em> • แนวทางเลี้ยงสำหรับมือใหม่</p>
+</header>
+
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="#about">ข้อมูลปลา</a>
+  <a href="#care">วิธีเลี้ยง</a>
+  <a href="#treat">การรักษา</a>
+</nav>
+
+<section id="about">
+  <h2>ข้อมูลพื้นฐานปลาบอลลูน</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="badge">พื้นฐาน</span>
+      <h3>ปลาบอลลูนคืออะไร</h3>
+      <ul>
+        <li>ชื่อสามัญ: ปลาบอลลูน</li>
+        <li>ชื่อวิทยาศาสตร์: <em>Poecilia latipinna</em></li>
+        <li>ลักษณะเด่น: ลำตัวสั้น กลม พุงป่อง</li>
+        <li>นิสัย: ค่อนข้างสงบ เลี้ยงรวมได้</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="badge">เหมาะกับใคร</span>
+      <h3>กลุ่มผู้เลี้ยง</h3>
+      <ul>
+        <li>ผู้เริ่มต้นเลี้ยงปลา</li>
+        <li>ตู้รวม ปลานิสัยไม่ดุ</li>
+        <li>คนที่ต้องการปลาน่ารัก ดูแลง่าย</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="care">
+  <h2>วิธีการเลี้ยงปลาบอลลูน</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>ภาชนะและน้ำ</h3>
+      <ul>
+        <li>แนะนำตู้ขนาดอย่างน้อย 12–18 นิ้วขึ้นไป</li>
+        <li>ปลาบอลลูนชอบว่าย ต้องมีพื้นที่</li>
+        <li>ใช้น้ำประปาพักคลอรีน</li>
+        <li>สามารถใส่ใบหูกวางหรือน้ำหมัก + เกลือสมุทร 1 ช้อนชา</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>ระบบกรอง / อากาศ</h3>
+      <ul>
+        <li>แนะนำให้มีระบบกรอง (ฟองน้ำหรือกรองแขวน)</li>
+        <li>ควรมีอากาศตลอดเวลา</li>
+        <li>ปลาบอลลูนกินเก่ง ขี้หนัก น้ำเสียง่าย</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>การป้องกันโรค</h3>
+      <ul>
+        <li>ใช้ Methylene Blue แบบอ่อน ๆ เป็นช่วง ๆ</li>
+        <li>อัตรา 0.5 cc ต่อน้ำ 1 ลิตร หรือ 1 หยด</li>
+        <li>แนะนำใช้ช่วงปลาใหม่ หรือมีแผล</li>
+        <li>เปลี่ยนน้ำ 20–30% ทุก 5–7 วัน</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="treat">
+  <h2>วิธีการรักษาปลาป่วย (ปลาบอลลูน)</h2>
+  <div class="card">
+    <ol>
+      <li>แยกปลา ใส่น้ำ 10 ลิตร</li>
+      <li>ให้อากาศ แต่ไม่ต้องใส่กรอง</li>
+      <li>ใส่เกลือสมุทร 1 ช้อนชา / 10 ลิตร</li>
+      <li>ใส่แทนนินเล็กน้อย (ไม่เข้ม)</li>
+      <li>ใช้ Methylene Blue อ่อน ๆ ประมาณ 0.3–0.5 cc / 10 ลิตร</li>
+      <li>งดอาหาร 2–3 วัน</li>
+      <li>เมื่ออาการดีขึ้น ให้เริ่มให้อาหารน้อย ๆ</li>
+      <li>เปลี่ยนน้ำ 30–50% ทุก 2–3 วัน พร้อมเติมยาใหม่ตามสัดส่วน</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <p>ร้าน ป.ปลาตัวกลม</p>
+  <p>ข้อมูลปลาบอลลูนสำหรับผู้เลี้ยงที่ชอบความน่ารักของน้อง</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ปลากัด (Betta) | ร้าน ป.ปลาตัวกลม</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --blue: #38bdf8;
+      --blue-dark: #0284c7;
+      --orange: #fb923c;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #e0f2fe, #fff7ed);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--blue-dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.8rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--orange);
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff7ed;
+      color: var(--orange);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ปลากัด (Betta)</h1>
+  <p>ข้อมูลพื้นฐาน • วิธีเลี้ยง • การดูแลและการรักษา</p>
+</header>
+
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="#about">ข้อมูลปลา</a>
+  <a href="#care">วิธีเลี้ยง</a>
+  <a href="#prevent">ป้องกันโรค</a>
+  <a href="#treat">การรักษา</a>
+</nav>
+
+<section id="about">
+  <h2>ข้อมูลพื้นฐานปลากัด</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="badge">พื้นฐาน</span>
+      <h3>ปลากัดคืออะไร</h3>
+      <ul>
+        <li>ชื่อสามัญ: ปลากัด (Betta)</li>
+        <li>ชื่อวิทยาศาสตร์: <em>Betta splendens</em></li>
+        <li>ถิ่นกำเนิด: เอเชียตะวันออกเฉียงใต้</li>
+        <li>นิสัย: หวงถิ่น ไม่ควรเลี้ยงรวม (ตัวเมียอาจเลี้ยงรวมได้ในบางกรณีและต้องมีที่หลบซ่อน) สามารถเลี้ยงกับปลาสายพันธุ์อื่นได้</li>
+        <li>อายุเฉลี่ย: 2–4 ปี</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="badge">ข้อควรรู้</span>
+      <h3>เหมาะกับใคร</h3>
+      <ul>
+        <li>ผู้เริ่มต้นเลี้ยงปลา</li>
+        <li>พื้นที่จำกัด</li>
+        <li>ต้องการปลาสวย ดูแลง่าย</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="care">
+  <h2>วิธีการเลี้ยงปลากัด</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>อุปกรณ์</h3>
+      <ul>
+        <li>ภาชนะขนาด 3 × 5 × 8 นิ้ว หรือใหญ่กว่า</li>
+        <li>น้ำประปาพักคลอรีนอย่างน้อย 24 ชั่วโมง</li>
+        <li>ใบหูกวางหรือน้ำหมัก (ถ้ามี)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>การดูแลน้ำ</h3>
+      <ul>
+        <li>เปลี่ยนน้ำทุก 5–7 วัน</li>
+        <li>เปลี่ยนน้ำ 100%</li>
+        <li>ดูแลความสะอาดอย่างสม่ำเสมอ</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prevent">
+  <h2>การป้องกันโรค</h2>
+  <div class="card">
+    <ul>
+      <li>ลดความเครียดของปลา</li>
+      <li>ไม่วางตู้ในที่เสียงดังหรือมีแรงสั่น</li>
+      <li>ใช้ Methylene Blue เฉพาะช่วงจำเป็น</li>
+    </ul>
+  </div>
+</section>
+
+<section id="treat">
+  <h2>วิธีการรักษาปลาป่วย</h2>
+  <div class="card">
+    <ol>
+      <li>แยกปลา ใช้น้ำ 1 ลิตร ใส่แทนนิน 1 cc</li>
+      <li>ใส่ Methylene Blue ประมาณ 1 cc</li>
+      <li>งดอาหาร 3 วันแรก</li>
+      <li>วันที่ 4 ให้อาหารเม็ดจิ๋ว วันละ 1 มื้อ</li>
+      <li>วันที่ 5 เปลี่ยนน้ำและใส่ยาซ้ำ</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <p>ร้าน ป.ปลาตัวกลม</p>
+  <p>ข้อมูลปลากัดสำหรับผู้เลี้ยงจริง</p>
+</footer>
+
+</body>
+</html>

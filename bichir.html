@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ปลาบิเซียร์ Senegal | ร้าน ป.ปลาตัวกลม</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --blue:#38bdf8; --blue-dark:#0284c7; --orange:#fb923c;
+      --card:#ffffff; --text:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:system-ui,sans-serif;
+      background:linear-gradient(180deg,#e0f2fe,#fff7ed);
+      color:var(--text);line-height:1.7;
+    }
+    header{
+      background:linear-gradient(135deg,var(--blue-dark),var(--blue));
+      color:#fff;padding:3rem 1.5rem;text-align:center;
+    }
+    nav{
+      background:#fff;display:flex;justify-content:center;gap:2rem;
+      padding:1rem;position:sticky;top:0;box-shadow:0 4px 20px rgba(0,0,0,.05)
+    }
+    nav a{color:var(--blue-dark);text-decoration:none;font-weight:600}
+    section{max-width:1100px;margin:auto;padding:3rem 1.5rem}
+    h2{color:var(--blue-dark)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+    .card{
+      background:var(--card);border-radius:18px;padding:1.8rem;
+      box-shadow:0 20px 40px rgba(0,0,0,.08)
+    }
+    footer{
+      background:#020617;color:#cbd5f5;text-align:center;
+      padding:2.5rem 1.5rem;margin-top:4rem
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ปลาบิเซียร์ สายพันธุ์ Senegal</h1>
+  <p><em>Polypterus senegalus</em> • ปลาแปลก เลี้ยงทน</p>
+</header>
+
+<nav>
+  <a href="index.html">หน้าแรก</a>
+  <a href="#about">ข้อมูลปลา</a>
+  <a href="#care">การเลี้ยง</a>
+</nav>
+
+<section id="about">
+  <h2>ข้อมูลพื้นฐาน</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>ถิ่นกำเนิด: แอฟริกา</li>
+        <li>ขนาดโตเต็มที่: 30–40 ซม.</li>
+        <li>อายุยืน หากดูแลดี</li>
+        <li>หายใจอากาศได้บางส่วน</li>
+        <li>ข้อควรทราบ น้องเป็นปลาที่จมน้ำตายได้</li>
+      </ul>
+    </div>
+    <div class="card">
+      <ul>
+        <li>รูปร่างคล้ายปลาดึกดำบรรพ์</li>
+        <li>นิสัยสงบ แต่กินปลาเล็ก มีปลาเมทได้ แต่ขอให้ใหญ่กว่าปากน้อง</li>
+        <li>เหมาะกับตู้มีฝาปิด</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="care">
+  <h2>แนวทางการเลี้ยง</h2>
+  <div class="card">
+    <ul>
+      <li>ตู้ต้องมีฝาปิด (กระโดดเก่ง)</li>
+      <li>กรองดี น้ำสะอาด</li>
+      <li>อาหารจม / อาหารสด</li>
+      <li>เลี้ยงรวมได้กับปลาขนาดใกล้เคียง</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>ร้าน ป.ปลาตัวกลม</p>
+  <p>ปลาแปลก เลี้ยงทน สำหรับผู้เลี้ยงที่อยากลองปลาแปลก</p>
+</footer>
+
+</body>
+</html>
