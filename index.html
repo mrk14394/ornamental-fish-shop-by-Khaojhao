@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ร้าน ป.ปลาตัวกลม | ปลาสวย ปลาแปลก จากวิศวะไฟฟ้า</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --blue: #38bdf8;
+      --blue-dark: #0284c7;
+      --orange: #fb923c;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #e0f2fe, #fff7ed);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      color: var(--blue-dark);
+      margin-bottom: 1.2rem;
+      font-size: 1.9rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.8rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--orange);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--orange);
+      background: #fff7ed;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 0.6rem;
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ร้าน ป.ปลาตัวกลม</h1>
+  <p>ปลาสวย • ปลาแปลก • ให้ข้อมูลจริง เลี้ยงได้จริง จากผู้เลี้ยงสู่ผู้เลี้ยง</p>
+</header>
+
+<section>
+  <h2>หมวดหมู่ปลา</h2>
+
+  <div class="grid">
+    <a class="card" href="betta.html">
+      <span class="tag">มือใหม่</span>
+      <h3>ปลากัด (Betta)</h3>
+      <p>ปลาสวย เลี้ยงเดี่ยว ดูแลง่าย  
+      เหมาะสำหรับผู้เริ่มต้นและคนพื้นที่จำกัด</p>
+    </a>
+
+    <a class="card" href="balloon.html">
+      <span class="tag">น่ารัก</span>
+      <span class="tag">มือใหม่</span>
+      <h3>ปลาบอลลูน</h3>
+      <p>ปลาทรงกลม นิสัยไม่ดุ  
+      เหมาะกับตู้โชว์และครอบครัว</p>
+    </a>
+
+    <a class="card" href="guppy.html">
+      <span class="tag">เพาะพันธุ์</span>
+      <span class="tag">มือใหม่</span>
+      <h3>ปลาหางนกยูง</h3>
+      <p>สีสันหลากหลาย  
+      เหมาะสำหรับสายเพาะและเลี้ยงเป็นฝูง</p>
+    </a>
+
+    <a class="card" href="bichir.html">
+      <span class="tag">ปลาแปลก</span>
+      <span class="tag">มีประสบการณ์</span>
+      <h3>ปลาบิเซียร์ (พันธ์ุ Senegal)</h3>
+      <p>ปลาดึกดำบรรพ์  
+      สำหรับผู้เลี้ยงที่มีประสบการณ์</p>
+    </a>
+
+    <a class="card" href="auranti.html">
+      <span class="tag">สายโหด</span>
+      <span class="tag">มีประสบการณ์</span>
+      <h3>ปลาช่อนทองลายบั้ง</h3>
+      <p>ปลาสะสม นิสัยดุ สำหรับผู้เลี้ยงที่มีประสบการณ์ สายโหด  
+      ต้องการความเข้าใจและพื้นที่เหมาะสม</p>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>แนวทางของร้าน</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>ให้ข้อมูลตรงไปตรงมา</h3>
+      <p> บอกทั้งข้อดีและข้อจำกัดของปลาแต่ละชนิด</p>
+    </div>
+
+    <div class="card">
+      <h3>เลี้ยงได้จริง</h3>
+      <p>ทุกข้อมูลอ้างอิงจากการเลี้ยงจริง  
+      และมาจากการหาข้อมูลเพิ่มเติม</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>ร้าน ป.ปลาตัวกลม</p>
+  <p>ปลาสวย • ปลาแปลก • จากผู้เลี้ยงสู่ผู้เลี้ยง</p>
+</footer>
+
+</body>
+</html>
