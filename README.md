@@ -1,1 +1,1 @@
-This is for the information & how to taking care of the ornamental fish for Kasetfair 2569 booth
+This project is designed to provide useful information and basic care guidelines for ornamental fish, specifically for the Kaset Fair 2569 booth.
